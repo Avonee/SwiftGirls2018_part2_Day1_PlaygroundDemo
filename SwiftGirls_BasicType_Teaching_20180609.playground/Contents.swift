@@ -29,9 +29,18 @@ print("來看看Optional是什麼：\(e ?? "e如果是nil就會印出此串文�
 // 集合型別
 // 集合型別-1，陣列，儲存同一型別的多個值，相同的值可以多次出現在一個陣列的不同位置中
 // ex: [value 1, value 2, value 3]
-let f:Array = ["Avon", "Peter","Candy"]
+var f:Array = ["Avon", "Peter","Candy"]
 // 集合型別-2，字典，儲存多個相同型別的值的容器，每個值（value）都有唯一的標示（key）
 // ex: [key 1: value 1, key 2: value 2, key 3: value 3]
 let g:Dictionary = ["name":"Avon", "age":"18", "email":"avon@yayaya.com"]
+
+
+// array：
+ f.append("Jack") // ["Avon", "Peter", "Candy", "Jack"]
+ f.count // 4
+ f[0] // "Avon"
+
+// dictionay
+g["name"] // "Avon"
 
 
